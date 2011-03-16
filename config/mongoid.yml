@@ -11,7 +11,7 @@ development:
   database: goldenmile_development
 
 test:
-   host: localhost
+  host: localhost
   database: goldenmile_test
 
 # set these environment variables on your prod server
