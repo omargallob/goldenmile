@@ -1,0 +1,159 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 14, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 8, ../src/screen.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+/* line 15, ../src/screen.scss */
+body #wrapper {
+  width: 960px;
+  margin: 0px auto;
+}
+/* line 20, ../src/screen.scss */
+body #wrapper header {
+  width: 940px;
+  height: 175px;
+  background: transparent;
+  margin: 0 10px;
+  float: left;
+}
+/* line 31, ../src/screen.scss */
+body #wrapper header img#logo {
+  float: left;
+}
+/* line 35, ../src/screen.scss */
+body #wrapper header h1 {
+  float: left;
+}
+/* line 39, ../src/screen.scss */
+body #wrapper header #logbox {
+  width: 230px;
+  height: 100px;
+  float: right;
+  background: green;
+  margin-top: 10px;
+}
+/* line 51, ../src/screen.scss */
+body #wrapper header nav {
+  position: absolute;
+  width: 100%;
+  height: 54px;
+  background: url(/images/system/bg/menu.png) repeat-x;
+  left: 0px;
+  margin-top: 120px;
+}
+/* line 64, ../src/screen.scss */
+body #wrapper header nav ul {
+  width: 900px;
+  margin: 19px auto;
+}
+/* line 69, ../src/screen.scss */
+body #wrapper header nav ul li {
+  font-family: "MuseoSlab500";
+  color: white;
+  font-size: 13px;
+  display: inline;
+  margin: 0 15px;
+}
+/* line 80, ../src/screen.scss */
+body #wrapper header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+/* line 90, ../src/screen.scss */
+body #wrapper section#main {
+  float: left;
+  width: 100%;
+}
+/* line 95, ../src/screen.scss */
+body #wrapper section#main h1 {
+  font-family: "Museo300";
+  font-size: 29px;
+  margin: 26px 40px 17px 40px;
+}
+/* line 104, ../src/screen.scss */
+body #wrapper section#main .box {
+  float: left;
+  background: #f2f2f2;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  min-height: 150px;
+}
+/* line 118, ../src/screen.scss */
+body #wrapper section#main #left-column {
+  width: 221px;
+}
+/* line 122, ../src/screen.scss */
+body #wrapper section#main #center {
+  width: 521px;
+  margin: 0px 10px;
+}
+/* line 128, ../src/screen.scss */
+body #wrapper section#main #right-column {
+  width: 170px;
+}

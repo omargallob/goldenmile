@@ -1,0 +1,16 @@
+embed_assets: on
+
+javascripts:
+  common:  
+    - public/javascripts/plugins.js      
+    - public/javascripts/rails.js  
+    - public/javascripts/jquery.prettyPhoto.js    
+    - public/javascripts/application.js
+  
+
+stylesheets:
+  common:
+    - public/stylesheets/screen.css
+    - public/stylesheets/prettyPhoto.css
+    - public/fonts/fonts.css
+    - public/stylesheets/forms.css

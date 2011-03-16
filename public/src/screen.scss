@@ -1,0 +1,134 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+body{
+	width:
+		100%;
+	height:
+		100%;
+	background:
+		white;
+	#wrapper{
+		width: 	
+			960px;
+		margin:
+			0px auto;
+		header{
+			width:
+				940px;
+			height:
+				175px;
+			background:
+				transparent;
+			margin:
+				0 10px;
+			float:	
+				left;
+			img#logo{
+				float:
+					left;
+			}
+			h1{
+				float:
+					left;
+			}
+			#logbox{
+				width:
+					230px;
+				height:
+					100px;
+				float:
+					right;
+				background:
+					green;
+				margin-top:
+					10px;
+			}
+			nav{
+				position:
+					absolute;
+				width:
+					100%;
+				height:
+					54px;
+				background:
+					url(/images/system/bg/menu.png) repeat-x;
+				left:
+					0px;
+				margin-top:
+					120px;
+				ul{
+					width:
+						900px;
+					margin:
+						19px auto;
+					li{
+						font-family:
+							"MuseoSlab500";
+						color:
+							white;
+						font-size:
+							13px;
+						display:	
+							inline;
+						margin:
+							0 15px;
+						a{
+							color:
+								white;
+							text-decoration:
+								none;
+						}						
+					}
+				}
+			}
+		}
+		section#main{
+			float:
+				left;
+			width:
+				100%;
+			h1{
+				font-family:	
+					"Museo300";
+				font-size:
+					29px;
+				margin:
+					26px 40px 17px 40px;
+				
+			}
+			.box{
+				float:
+					left;
+				background:
+					#f2f2f2;
+				border-radius:
+					3px;
+				-moz-border-radius:
+					3px;
+				-webkit-border-radius:
+					3px;
+				min-height:
+					150px;
+			}
+			#left-column{
+				width:
+					221px;
+			}
+			#center{
+				width:
+					521px;
+				margin:
+					0px 10px;
+			}
+			#right-column{
+				width:
+					170px;
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --> 
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=0.3">
+		<meta name="author" content="Designed and developed by Feature Rich Ltd" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+
+    <%= csrf_meta_tag %>
+		
+ 		<%= javascript_include_tag "modernizr-1.6.min" %>
+ 		<%= include_stylesheets :common %>
+    <%= yield(:head) %>
+  </head>
+  <body>
+    <div id="wrapper">
+
+			<header>
+				<%= image_tag "logo.png", :id=>"logo" %>				
+				<nav>					
+					<%= render_navigation(:level => 1) unless admin_signed_in? %>
+					<%= render_navigation(:level => 1, :context => :admin) if admin_signed_in? %>					
+				</nav>
+			</header>
+			<% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <% end %>
+			<section id="main">
+				<%= content_tag :h1, yield(:title) if show_title? %>
+				<section id="left-column" class="box">
+				</section>
+				<section id="center" class="box">
+					      <%= yield %> 
+				</section>
+				<section id="right-column" class="box">
+				</section>
+				
+
+			</section>
+    </div>
+			<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+			<script type="text/javascript">
+			 google.load("jquery", "1.5");
+			 google.load("jqueryui", "1.8.6");
+
+			</script>
+
+			<%= include_javascripts :common %>
+			<%= include_tiny_mce_if_needed %>
+
+	    <%= yield(:script) %>
+	  </body>
+  </body>
+</html>

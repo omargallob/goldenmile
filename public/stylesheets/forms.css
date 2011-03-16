@@ -1,0 +1,100 @@
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+	float:left;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+	color:black;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+.fieldWithErrors {
+  display: inline;
+}
+
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+.error_messages p {
+  margin: 8px 10px;
+}
+
+.error_messages ul {
+  margin: 0;
+}
+.simple_form label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin: 2px 10px;
+}
+
+.simple_form div.input {
+  margin-bottom: 10px;
+}
+.simple_form div.input input[type=text],.simple_form div.input input[type=email],.simple_form div.input input[type=tel],.simple_form div.input input[type=password] {
+	width:200px;
+	background:transparent;
+	color:white;
+	border:1px solid white;
+	padding:4px;
+	-moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+ 	border-radius: 4px;
+}
+.simple_form div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
+}
+
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
+}
+
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
+}
+.simple_form{
+	padding-top:40px;
+}
+.simple_form .error {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #D00;
+  display: block;
+}
+
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #555;
+  display: block;
+  font-style: italic;
+}
