@@ -1,5 +1,5 @@
 defaults: &defaults
-  host: localhost
+ 
   # slaves:
   #   - host: slave1.local
   #     port: 27018
@@ -7,17 +7,14 @@ defaults: &defaults
   #     port: 27019
 
 development:
-  <<: *defaults
+  host: localhost
   database: goldenmile_development
 
 test:
-  <<: *defaults
+   host: localhost
   database: goldenmile_test
 
 # set these environment variables on your prod server
 production:
-  host: <%= ENV['MONGOID_HOST'] %>
-  port: <%= ENV['MONGOID_PORT'] %>
-  username: <%= ENV['MONGOID_USERNAME'] %>
-  password: <%= ENV['MONGOID_PASSWORD'] %>
-  database: <%= ENV['MONGOID_DATABASE'] %>
+  uri: <%= ENV['MONGOHQ_URL'] %>
+  database: goldenmile_development
