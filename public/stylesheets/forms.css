@@ -59,7 +59,7 @@
 .simple_form div.input input[type=text],.simple_form div.input input[type=email],.simple_form div.input input[type=tel],.simple_form div.input input[type=password] {
 	width:200px;
 	background:transparent;
-	color:white;
+	color:black;
 	border:1px solid white;
 	padding:4px;
 	-moz-border-radius: 4px;

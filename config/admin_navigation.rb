@@ -9,7 +9,7 @@ SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
     primary.dom_id = 'admin'  
     primary.item :home, t('nav.admin.overview'), admin_root_path
-    #primary.item :logout, "Logout", destroy_user_session_path
+    primary.item :logout, "Logout", destroy_admin_session_path
   end
 
 end

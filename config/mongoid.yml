@@ -8,7 +8,7 @@ defaults: &defaults
 
 development:
   host: localhost
-  database: goldenmile_development
+  database: goldenmile
 
 test:
   host: localhost
@@ -17,4 +17,3 @@ test:
 # set these environment variables on your prod server
 production:
   uri: <%= ENV['MONGOHQ_URL'] %>
-  database: goldenmile_development
