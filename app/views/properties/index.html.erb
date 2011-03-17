@@ -1,6 +1,29 @@
 <% title "Properties#index" %>
-<h2>Property Search</h2>
-
+<div id="main">
+	<h2>Property Search</h2>
+	<%= image_tag "system/static/search_property.png", :id => "static_search_property" %>
+	<h2>Featured Properties</h2>
+	<%= image_tag "system/static/featured_property.png", :style=>"margin:25px 0 0 25px;" %>
+</div>
+<div id="tricolumn">
+	<ul>
+		<li>
+			<h3><strong>Buy</strong><br/> Property</h3>                                                                                                                                                                                                                                                                 
+			<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+			<p><%= link_to "<strong>buy</strong> property".html_safe,"#" %></p>
+		</li>                                                                                                                                                                                                                                                                                                         
+		<li class="center">                                                                                                                                                                                                                                                                                           
+			<h3><strong>Rent</strong><br/> Property</h3>                                                                                                                                                                                                                                                                
+			<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+					<p><%= link_to "<strong>rent</strong> property".html_safe,"#" %></p>
+		</li>                                                                                                                                                                                                                                                                                                         
+		<li>                                                                                                                                                                                                                                                                                                          
+			<h3><strong>Sell</strong><br/> Property</h3>                                                                                                                                                                                                                                                                
+			<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+					<p><%= link_to "<strong>sell</strong> property".html_safe,"#" %></p>
+		</li>
+	</ul>
+</div>
 <% content_for(:left_column) do %>
 <%= render :partial => "left" %>
 <% end %>

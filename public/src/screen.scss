@@ -4,6 +4,40 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@mixin buttons{
+	a{
+		border:
+			1px solid #5a5800;
+		border-radius:
+			10px;
+		-moz-border-radius:
+			10px;
+		-webkit-border-radius:
+			10px;	
+		text-shadow:
+			0 1px black;
+		-moz-text-shadow:
+			0 1px black;							
+		-webkit-text-shadow:
+			0 1px black;	
+		background:
+			#8e8e8e;
+		font-size:
+			12px;
+		float:
+			left;
+		padding:
+			3px 10px;
+		text-align:
+			center;
+		color:
+			white;
+		width:
+			132px;
+		font-family:
+			"HelveticaNeueLTCom45Light";
+	}
+}
 @mixin right-column-links{
 	a{
 		color:
@@ -46,7 +80,10 @@ body{
 		text-decoration:
 			none;	
 	}
-	
+	strong{
+		font-weight:
+			bold;
+	}
 	#wrapper{
 		width: 	
 			960px;
@@ -237,6 +274,97 @@ body{
 					521px;
 				margin:
 					0px 10px;
+				background:
+					transparent;
+				padding:
+					0px;
+				#main{
+					background:
+						#f2f2f2;
+					padding:
+						40px 0;
+					border-radius:
+						3px;
+					-moz-border-radius:
+						3px;
+					-webkit-border-radius:
+						3px;						
+				}
+				#tricolumn{
+					float:
+						left;
+					ul{
+						padding:
+							30px 40px;
+						float:
+							left;
+						li.center{
+							margin:
+								0 10px;
+						}
+						li{
+							float:
+								left;
+							width:
+								140px;
+							p{
+								float:
+									left;
+								font-size:
+									10px;
+								font-family:
+									Verdana;
+								@include buttons;		
+								margin-top:
+									10px;
+								padding:
+									0 4px;
+								a{
+									width:
+										100px;
+								}
+							}
+							h3{
+								width:
+									100px;
+								background:
+									#f2f2f2;
+								border-radius:
+									3px;
+								-moz-border-radius:
+									3px;
+								-webkit-border-radius:
+									3px;
+								font-size:
+									16px;
+								font-family:
+									"HelveticaNeueLTCom45Light";
+								padding:
+									15px 20px;
+								text-transform:
+									uppercase;
+								float:
+									left;
+								strong{
+									font-family:
+										"HelveticaNeueLT55RomanRegular";						
+									font-size:
+										22px;
+								}
+							}
+						}
+					}						
+				}
+				img#static_search_property{
+					margin-left:
+						25px;
+					padding-bottom:
+						25px;
+					border-bottom:
+						1px solid white;
+					margin-bottom:
+						15px;
+				}
 				table#list{
 					tr.hover{
 						background:
@@ -301,15 +429,15 @@ body{
 						22px;
 					color:
 						white;
+					text-shadow:
+						0 1px black;
+					-moz-text-shadow:
+						0 1px black;							
+					-webkit-text-shadow:
+						0 1px black;						
 					p{
 						margin:
-							15px 0 0 20px;
-						text-shadow:
-							0 1px black;
-						-moz-text-shadow:
-							0 1px black;							
-						-webkit-text-shadow:
-							0 1px black;						
+							15px 0 0 20px;		
 						text-transform:
 							uppercase;
 						font-family:
@@ -323,7 +451,7 @@ body{
 						float:
 							left;
 						margin-top:
-							10px;
+							25px;
 						li{
 							font-size:
 								12px;
@@ -331,27 +459,7 @@ body{
 								left;
 							margin:
 								0 9px 6px 9px;
-							a{
-								border:
-									1px solid #5a5800;
-								border-radius:
-									10px;
-								-moz-border-radius:
-									10px;
-								-webkit-border-radius:
-									10px;	
-								background:
-									#8e8e8e;
-								float:
-									left;
-								padding:
-									3px 10px;
-								color:
-									white;
-								width:
-									132px;
-								
-							}
+							@include buttons;
 						}
 					}
 				}
@@ -370,6 +478,8 @@ body{
 						"HelveticaNeueLTCom45Light";
 					letter-spacing:
 						1px;
+					line-height:
+						23px;
 					@include right-column-links;
 				}
 				.rightbox{

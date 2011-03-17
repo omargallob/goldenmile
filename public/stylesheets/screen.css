@@ -62,23 +62,27 @@ a img {
   border: none;
 }
 
-/* line 36, ../src/screen.scss */
+/* line 70, ../src/screen.scss */
 body {
   width: 100%;
   height: 100%;
   background: white url(/images/system/bg/properties.png) top center no-repeat;
 }
-/* line 43, ../src/screen.scss */
+/* line 77, ../src/screen.scss */
 body a {
   color: #4e4e4e;
   text-decoration: none;
 }
-/* line 50, ../src/screen.scss */
+/* line 83, ../src/screen.scss */
+body strong {
+  font-weight: bold;
+}
+/* line 87, ../src/screen.scss */
 body #wrapper {
   width: 960px;
   margin: 0px auto;
 }
-/* line 55, ../src/screen.scss */
+/* line 92, ../src/screen.scss */
 body #wrapper header {
   width: 940px;
   height: 175px;
@@ -86,15 +90,15 @@ body #wrapper header {
   margin: 0 10px;
   float: left;
 }
-/* line 66, ../src/screen.scss */
+/* line 103, ../src/screen.scss */
 body #wrapper header img#logo {
   float: left;
 }
-/* line 70, ../src/screen.scss */
+/* line 107, ../src/screen.scss */
 body #wrapper header h1 {
   float: left;
 }
-/* line 74, ../src/screen.scss */
+/* line 111, ../src/screen.scss */
 body #wrapper header #logbox {
   width: 230px;
   height: 100px;
@@ -102,7 +106,7 @@ body #wrapper header #logbox {
   background: green;
   margin-top: 10px;
 }
-/* line 86, ../src/screen.scss */
+/* line 123, ../src/screen.scss */
 body #wrapper header nav {
   position: absolute;
   width: 100%;
@@ -111,12 +115,12 @@ body #wrapper header nav {
   left: 0px;
   margin-top: 120px;
 }
-/* line 99, ../src/screen.scss */
+/* line 136, ../src/screen.scss */
 body #wrapper header nav ul {
   width: 900px;
   margin: 19px auto;
 }
-/* line 104, ../src/screen.scss */
+/* line 141, ../src/screen.scss */
 body #wrapper header nav ul li {
   font-family: "MuseoSlab500";
   color: white;
@@ -124,7 +128,7 @@ body #wrapper header nav ul li {
   display: inline;
   margin: 0 15px;
 }
-/* line 115, ../src/screen.scss */
+/* line 152, ../src/screen.scss */
 body #wrapper header nav ul li a {
   color: white;
   text-decoration: none;
@@ -132,20 +136,20 @@ body #wrapper header nav ul li a {
   -moz-text-shadow: 0 1px black;
   -webkit-text-shadow: 0 1px black;
 }
-/* line 131, ../src/screen.scss */
+/* line 168, ../src/screen.scss */
 body #wrapper section#main {
   padding-bottom: 40px;
   float: left;
   width: 100%;
 }
-/* line 138, ../src/screen.scss */
+/* line 175, ../src/screen.scss */
 body #wrapper section#main h1 {
   font-family: "Museo300";
   font-size: 29px;
   margin: 26px 40px 17px 40px;
   width: 860px;
 }
-/* line 149, ../src/screen.scss */
+/* line 186, ../src/screen.scss */
 body #wrapper section#main h2 {
   font-family: "HelveticaNeueLT55RomanRegular";
   font-size: 12px;
@@ -154,7 +158,7 @@ body #wrapper section#main h2 {
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 163, ../src/screen.scss */
+/* line 200, ../src/screen.scss */
 body #wrapper section#main .box {
   float: left;
   background: #f2f2f2;
@@ -163,18 +167,18 @@ body #wrapper section#main .box {
   -webkit-border-radius: 3px;
   padding: 40px 0;
 }
-/* line 177, ../src/screen.scss */
+/* line 214, ../src/screen.scss */
 body #wrapper section#main #left-column {
   width: 221px;
 }
-/* line 180, ../src/screen.scss */
+/* line 217, ../src/screen.scss */
 body #wrapper section#main #left-column ul {
   float: left;
   margin: 10px 18px 20px 18px;
   padding-bottom: 5px;
   border-bottom: 1px solid white;
 }
-/* line 189, ../src/screen.scss */
+/* line 226, ../src/screen.scss */
 body #wrapper section#main #left-column ul li.level1 {
   width: 182px;
   height: 30px;
@@ -183,7 +187,7 @@ body #wrapper section#main #left-column ul li.level1 {
   float: left;
   cursor: pointer;
 }
-/* line 202, ../src/screen.scss */
+/* line 239, ../src/screen.scss */
 body #wrapper section#main #left-column ul li.level1 a {
   font-family: "HelveticaNeueLTCom45Light";
   margin: 7px 0 0 10px;
@@ -192,60 +196,143 @@ body #wrapper section#main #left-column ul li.level1 a {
   text-decoration: none;
   font-size: 12px;
 }
-/* line 218, ../src/screen.scss */
+/* line 255, ../src/screen.scss */
 body #wrapper section#main #left-column ul ul.sublevel1 li {
   font-size: 10px;
   margin-left: 25px;
   list-style: disc inside;
   float: left;
 }
-/* line 227, ../src/screen.scss */
+/* line 264, ../src/screen.scss */
 body #wrapper section#main #left-column ul ul.sublevel1 li a {
   float: none;
 }
-/* line 235, ../src/screen.scss */
+/* line 272, ../src/screen.scss */
 body #wrapper section#main #center {
   width: 521px;
   margin: 0px 10px;
+  background: transparent;
+  padding: 0px;
 }
-/* line 241, ../src/screen.scss */
+/* line 281, ../src/screen.scss */
+body #wrapper section#main #center #main {
+  background: #f2f2f2;
+  padding: 40px 0;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/* line 293, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn {
+  float: left;
+}
+/* line 296, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul {
+  padding: 30px 40px;
+  float: left;
+}
+/* line 301, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul li.center {
+  margin: 0 10px;
+}
+/* line 305, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul li {
+  float: left;
+  width: 140px;
+}
+/* line 310, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul li p {
+  float: left;
+  font-size: 10px;
+  font-family: Verdana;
+  margin-top: 10px;
+  padding: 0 4px;
+}
+/* line 8, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul li p a {
+  border: 1px solid #5a5800;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  text-shadow: 0 1px black;
+  -moz-text-shadow: 0 1px black;
+  -webkit-text-shadow: 0 1px black;
+  background: #8e8e8e;
+  font-size: 12px;
+  float: left;
+  padding: 3px 10px;
+  text-align: center;
+  color: white;
+  width: 132px;
+  font-family: "HelveticaNeueLTCom45Light";
+}
+/* line 322, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul li p a {
+  width: 100px;
+}
+/* line 327, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul li h3 {
+  width: 100px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 16px;
+  font-family: "HelveticaNeueLTCom45Light";
+  padding: 15px 20px;
+  text-transform: uppercase;
+  float: left;
+}
+/* line 348, ../src/screen.scss */
+body #wrapper section#main #center #tricolumn ul li h3 strong {
+  font-family: "HelveticaNeueLT55RomanRegular";
+  font-size: 22px;
+}
+/* line 358, ../src/screen.scss */
+body #wrapper section#main #center img#static_search_property {
+  margin-left: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+}
+/* line 369, ../src/screen.scss */
 body #wrapper section#main #center table#list tr.hover {
   background: red;
 }
-/* line 245, ../src/screen.scss */
+/* line 373, ../src/screen.scss */
 body #wrapper section#main #center table#list tr.parent {
   background: green;
 }
-/* line 250, ../src/screen.scss */
+/* line 378, ../src/screen.scss */
 body #wrapper section#main #center table#list tr th {
   background: white;
   color: black;
   font-weight: bold;
 }
-/* line 258, ../src/screen.scss */
+/* line 386, ../src/screen.scss */
 body #wrapper section#main #center table#list tr th, body #wrapper section#main #center table#list tr td {
   padding: 5px 10px;
   text-align: center;
 }
-/* line 265, ../src/screen.scss */
+/* line 393, ../src/screen.scss */
 body #wrapper section#main #center table#list tr td.title, body #wrapper section#main #center table#list tr th.title {
   text-align: left;
 }
-/* line 270, ../src/screen.scss */
+/* line 398, ../src/screen.scss */
 body #wrapper section#main #center table#list tr td a {
   text-decoration: none;
 }
-/* line 278, ../src/screen.scss */
+/* line 406, ../src/screen.scss */
 body #wrapper section#main #right-column {
   width: 172px;
   background: transparent;
   padding: 0px;
 }
-/* line 285, ../src/screen.scss */
+/* line 413, ../src/screen.scss */
 body #wrapper section#main #right-column h2 {
   margin-left: 20px;
 }
-/* line 289, ../src/screen.scss */
+/* line 417, ../src/screen.scss */
 body #wrapper section#main #right-column .tools {
   float: left;
   width: 172px;
@@ -254,44 +341,50 @@ body #wrapper section#main #right-column .tools {
   margin-top: 8px;
   font-size: 22px;
   color: white;
-}
-/* line 304, ../src/screen.scss */
-body #wrapper section#main #right-column .tools p {
-  margin: 15px 0 0 20px;
   text-shadow: 0 1px black;
   -moz-text-shadow: 0 1px black;
   -webkit-text-shadow: 0 1px black;
+}
+/* line 438, ../src/screen.scss */
+body #wrapper section#main #right-column .tools p {
+  margin: 15px 0 0 20px;
   text-transform: uppercase;
   font-family: "HelveticaNeueLTCom45Light";
 }
-/* line 317, ../src/screen.scss */
+/* line 445, ../src/screen.scss */
 body #wrapper section#main #right-column .tools p strong {
   font-family: "HelveticaNeueLT55RomanRegular";
 }
-/* line 322, ../src/screen.scss */
+/* line 450, ../src/screen.scss */
 body #wrapper section#main #right-column .tools ul {
   float: left;
-  margin-top: 10px;
+  margin-top: 25px;
 }
-/* line 327, ../src/screen.scss */
+/* line 455, ../src/screen.scss */
 body #wrapper section#main #right-column .tools ul li {
   font-size: 12px;
   float: left;
   margin: 0 9px 6px 9px;
 }
-/* line 334, ../src/screen.scss */
+/* line 8, ../src/screen.scss */
 body #wrapper section#main #right-column .tools ul li a {
   border: 1px solid #5a5800;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
+  text-shadow: 0 1px black;
+  -moz-text-shadow: 0 1px black;
+  -webkit-text-shadow: 0 1px black;
   background: #8e8e8e;
+  font-size: 12px;
   float: left;
   padding: 3px 10px;
+  text-align: center;
   color: white;
   width: 132px;
+  font-family: "HelveticaNeueLTCom45Light";
 }
-/* line 358, ../src/screen.scss */
+/* line 466, ../src/screen.scss */
 body #wrapper section#main #right-column .button {
   float: left;
   width: 172px;
@@ -300,8 +393,9 @@ body #wrapper section#main #right-column .button {
   margin-top: 8px;
   font-family: "HelveticaNeueLTCom45Light";
   letter-spacing: 1px;
+  line-height: 23px;
 }
-/* line 8, ../src/screen.scss */
+/* line 42, ../src/screen.scss */
 body #wrapper section#main #right-column .button a {
   color: white;
   font-size: 15px;
@@ -312,12 +406,12 @@ body #wrapper section#main #right-column .button a {
   -moz-text-shadow: 0 1px black;
   -webkit-text-shadow: 0 1px black;
 }
-/* line 26, ../src/screen.scss */
+/* line 60, ../src/screen.scss */
 body #wrapper section#main #right-column .button a strong {
   font-size: 22px;
   font-family: "HelveticaNeueLT55RomanRegular";
 }
-/* line 375, ../src/screen.scss */
+/* line 485, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox {
   margin-top: 8px;
   border-radius: 3px;
@@ -330,7 +424,7 @@ body #wrapper section#main #right-column .rightbox {
   font-family: "HelveticaNeueLT55RomanRegular";
   fonst-size: 12px;
 }
-/* line 396, ../src/screen.scss */
+/* line 506, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox #newsletter {
   width: 138px;
   height: 46px;
@@ -338,13 +432,13 @@ body #wrapper section#main #right-column .rightbox #newsletter {
   background: url(/images/system/bg/sprite.png) -182px 0;
   margin: 15px;
 }
-/* line 408, ../src/screen.scss */
+/* line 518, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox form {
   float: left;
   width: 50%;
   margin: 0px 40px;
 }
-/* line 415, ../src/screen.scss */
+/* line 525, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox form input[type=email] {
   width: 100%;
   border: 1px solid #C0C0C0;
@@ -352,7 +446,7 @@ body #wrapper section#main #right-column .rightbox form input[type=email] {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
-/* line 427, ../src/screen.scss */
+/* line 537, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox form input[type=submit] {
   border: 1px solid #5a5800;
   border-radius: 10px;
@@ -366,28 +460,28 @@ body #wrapper section#main #right-column .rightbox form input[type=submit] {
   text-transform: uppercase;
   padding: 2px 10px 0 10px;
 }
-/* line 452, ../src/screen.scss */
+/* line 562, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox ul {
   float: left;
   width: 100px;
   margin: 10px 0 0 50px;
 }
-/* line 459, ../src/screen.scss */
+/* line 569, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox ul li {
   width: 100%;
   float: left;
   margin-bottom: 6px;
   font-size: 12px;
 }
-/* line 468, ../src/screen.scss */
+/* line 578, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox ul li img, body #wrapper section#main #right-column .rightbox ul li p {
   float: left;
 }
-/* line 472, ../src/screen.scss */
+/* line 582, ../src/screen.scss */
 body #wrapper section#main #right-column .rightbox ul li p {
   margin: 5px 0 0 10px;
 }
-/* line 479, ../src/screen.scss */
+/* line 589, ../src/screen.scss */
 body #wrapper section#main #right-column .first {
   margin-top: 0px;
   padding: 40px 0 20px 0;
