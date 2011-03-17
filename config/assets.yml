@@ -6,6 +6,7 @@ javascripts:
     - public/javascripts/rails.js  
     - public/javascripts/jquery.prettyPhoto.js    
     - public/javascripts/application.js
+  admin:
     - public/ninjaui/javascripts/jquery.ninjaui.js
     - public/javascripts/jquery.groupRows.js
   
@@ -15,5 +16,6 @@ stylesheets:
     - public/stylesheets/screen.css
     - public/stylesheets/prettyPhoto.css
     - public/fonts/fonts.css
-    - public/stylesheets/forms.css
+    - public/stylesheets/forms.css    
+  admin:
     - public/ninjaui/stylesheets/ninjaui.css

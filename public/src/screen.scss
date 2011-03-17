@@ -39,7 +39,7 @@ body{
 	height:
 		100%;
 	background:
-		white;
+		white url(/images/system/bg/properties.png) top center no-repeat;
 	a{
 		color:
 			#4e4e4e;
@@ -117,6 +117,12 @@ body{
 								white;
 							text-decoration:
 								none;
+							text-shadow:
+								0 1px black;
+							-moz-text-shadow:
+								0 1px black;							
+							-webkit-text-shadow:
+								0 1px black;								
 						}						
 					}
 				}
@@ -383,6 +389,10 @@ body{
 						100%;
 					float:
 						left;
+					font-family:
+						"HelveticaNeueLT55RomanRegular";
+					fonst-size:	
+						12px;
 					#newsletter{
 						width:
 							138px;
@@ -453,6 +463,8 @@ body{
 								left;
 							margin-bottom:
 								6px;
+							font-size:
+								12px;
 							img,p{
 								float:
 									left;
