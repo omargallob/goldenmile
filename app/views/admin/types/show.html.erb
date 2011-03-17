@@ -1,0 +1,30 @@
+<% title "Property Type: #{@type.name}" %>
+
+
+<% if @type.subtypes.size > 0 %>
+	<h2>Subtypes</h2>
+	<% @type.subtypes.each do |p| %>
+	<p><%= "#{p.name} | " unless p.name.blank? %>  <%= link_to "&nbsp;".html_safe, admin_type_subtype_path(@type.id,p.id) , :confirm => 'Are you sure?', :method => :delete, :class=>"delete_button" unless p.name.blank? %></p>
+	<% end %>
+<% end %>
+
+<%= simple_form_for([:admin,@type,@subtype]) do |f| %>
+	<%= f.input :name %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<% content_for(:script) do %>
+<script>
+$(document).ready(function(){
+
+$('.edit_button').ninjaIconCreate('edit');
+$('.delete_button').ninjaIconCreate('remove');
+});
+</script>
+<% end %>
+
+
+<%= link_to 'Edit', edit_admin_type_path(@type) %> |
+<%= link_to 'Back', admin_types_path %>

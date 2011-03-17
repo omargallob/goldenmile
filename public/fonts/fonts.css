@@ -46,3 +46,66 @@
     font-style: normal;
 
 }	
+
+
+@font-face {
+    font-family: 'HelveticaNeueLTCom45Light';
+    src: url('helveticaneueltcom-lt-webfont.eot');
+    src: url('helveticaneueltcom-lt-webfont.eot?iefix') format('eot'),
+         url('helveticaneueltcom-lt-webfont.woff') format('woff'),
+         url('helveticaneueltcom-lt-webfont.ttf') format('truetype'),
+         url('helveticaneueltcom-lt-webfont.svg#webfont8AYoHoBn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaNeueLT25UltLightRegu';
+    src: url('helvetica_lt_25_ultra_light-webfont.eot');
+    src: url('helvetica_lt_25_ultra_light-webfont.eot?iefix') format('eot'),
+         url('helvetica_lt_25_ultra_light-webfont.woff') format('woff'),
+         url('helvetica_lt_25_ultra_light-webfont.ttf') format('truetype'),
+         url('helvetica_lt_25_ultra_light-webfont.svg#webfontwfEXYuUl') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT55RomanRegular';
+    src: url('helvetica_lt_55_roman-webfont.eot');
+    src: url('helvetica_lt_55_roman-webfont.eot?iefix') format('eot'),
+         url('helvetica_lt_55_roman-webfont.woff') format('woff'),
+         url('helvetica_lt_55_roman-webfont.ttf') format('truetype'),
+         url('helvetica_lt_55_roman-webfont.svg#webfont35b7PZnn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT65MediumRegula';
+    src: url('helvetica_lt_65_medium-webfont.eot');
+    src: url('helvetica_lt_65_medium-webfont.eot?iefix') format('eot'),
+         url('helvetica_lt_65_medium-webfont.woff') format('woff'),
+         url('helvetica_lt_65_medium-webfont.ttf') format('truetype'),
+         url('helvetica_lt_65_medium-webfont.svg#webfontIApxmaqO') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'HelveticaNeueLTCom75Bold';
+    src: url('helveticaneueltcom-bd-webfont.eot');
+    src: url('helveticaneueltcom-bd-webfont.eot?iefix') format('eot'),
+         url('helveticaneueltcom-bd-webfont.woff') format('woff'),
+         url('helveticaneueltcom-bd-webfont.ttf') format('truetype'),
+         url('helveticaneueltcom-bd-webfont.svg#webfonteUTw95Lz') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -4,6 +4,34 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@mixin right-column-links{
+	a{
+		color:
+			white;
+		font-size:
+			15px;
+		text-transform:
+			uppercase;
+		margin:
+			15px 0 0 20px;
+		float:
+			left;
+		text-shadow:
+			0 1px black;
+		-moz-text-shadow:
+			0 1px black;							
+		-webkit-text-shadow:
+			0 1px black;							
+
+		strong{
+			font-size:
+				22px;
+			font-family:
+				"HelveticaNeueLT55RomanRegular";
+		}
+	}
+}
+
 
 body{
 	width:
@@ -12,6 +40,13 @@ body{
 		100%;
 	background:
 		white;
+	a{
+		color:
+			#4e4e4e;
+		text-decoration:
+			none;	
+	}
+	
 	#wrapper{
 		width: 	
 			960px;
@@ -87,7 +122,9 @@ body{
 				}
 			}
 		}
-		section#main{
+		section#main{			
+			padding-bottom:
+				40px;
 			float:
 				left;
 			width:
@@ -99,7 +136,23 @@ body{
 					29px;
 				margin:
 					26px 40px 17px 40px;
+				width:
+					860px;
 				
+			}
+			h2{
+				font-family:
+					"HelveticaNeueLT55RomanRegular";
+				font-size:
+					12px;
+				margin:
+					0px 0 0 40px;
+				color:
+					#4e4e4e;
+				text-transform:
+					uppercase;
+				font-weight:
+					bold;
 			}
 			.box{
 				float:
@@ -112,22 +165,311 @@ body{
 					3px;
 				-webkit-border-radius:
 					3px;
-				min-height:
-					150px;
+				padding:
+					40px 0;
 			}
 			#left-column{
 				width:
 					221px;
+				ul{
+					float:
+						left;
+					margin:
+						10px 18px 20px 18px;
+					padding-bottom:
+						5px;
+					border-bottom:
+						1px solid white;
+					li.level1{
+						width:
+							182px;
+						height:
+							30px;
+						background:
+							url(/images/system/bg/sprite.png) 0 0;
+						margin-bottom:
+							6px;
+						float:
+							left;
+						cursor:
+							pointer;
+						a{
+							font-family:
+								"HelveticaNeueLTCom45Light";
+							margin:
+								7px 0 0 10px;
+							float:
+								left;
+							color:
+								#4e4e4e;
+							text-decoration:
+								none;
+							font-size:
+								12px;
+						}
+					}
+					ul.sublevel1{
+						li{
+							font-size:
+								10px;
+							margin-left:
+								25px;
+							list-style:
+								disc inside;
+							float:
+								left;
+							a{
+								float:
+									none;
+							}
+						}
+					}
+				}
 			}
 			#center{
 				width:
 					521px;
 				margin:
 					0px 10px;
+				table#list{
+					tr.hover{
+						background:
+							red;
+					}
+					tr.parent{
+						background:
+							green;
+					}
+					tr{
+						th{
+							background:
+								white;
+							color:
+								black;
+							font-weight:
+								bold;
+						}
+						th,td{
+							padding:
+								5px 10px;
+							text-align:
+								center;
+							
+						}
+						td.title,th.title{
+							text-align:
+								left;
+						}
+						td{
+							a{
+								text-decoration:
+									none;
+							}
+						}
+					}
+				}
 			}
 			#right-column{
 				width:
-					170px;
+					172px;
+				background:
+					transparent;
+				padding:
+					0px;
+				h2{
+					margin-left:
+						20px;
+				}
+				.tools{
+					float:
+						left;
+					width:
+						172px;
+					height:
+						152px;
+					background:
+						url(/images/system/bg/sprite.png) -320px 0px;	
+					margin-top:
+						8px;
+					font-size:
+						22px;
+					color:
+						white;
+					p{
+						margin:
+							15px 0 0 20px;
+						text-shadow:
+							0 1px black;
+						-moz-text-shadow:
+							0 1px black;							
+						-webkit-text-shadow:
+							0 1px black;						
+						text-transform:
+							uppercase;
+						font-family:
+							"HelveticaNeueLTCom45Light";
+						strong{
+							font-family:
+								"HelveticaNeueLT55RomanRegular";						
+						}					
+					}
+					ul{
+						float:
+							left;
+						margin-top:
+							10px;
+						li{
+							font-size:
+								12px;
+							float:
+								left;
+							margin:
+								0 9px 6px 9px;
+							a{
+								border:
+									1px solid #5a5800;
+								border-radius:
+									10px;
+								-moz-border-radius:
+									10px;
+								-webkit-border-radius:
+									10px;	
+								background:
+									#8e8e8e;
+								float:
+									left;
+								padding:
+									3px 10px;
+								color:
+									white;
+								width:
+									132px;
+								
+							}
+						}
+					}
+				}
+				.button{
+					float:
+						left;
+					width:
+						172px;
+					height:
+						73px;
+					background:
+						url(/images/system/bg/sprite.png) 0 -60px;
+					margin-top:
+						8px;
+					font-family:
+						"HelveticaNeueLTCom45Light";
+					letter-spacing:
+						1px;
+					@include right-column-links;
+				}
+				.rightbox{
+					margin-top:
+						8px;
+					border-radius:
+						3px;
+					-moz-border-radius:
+						3px;
+					-webkit-border-radius:
+						3px;
+					float:
+						left;
+					background:
+						#f2f2f2;
+					width:
+						100%;
+					float:
+						left;
+					#newsletter{
+						width:
+							138px;
+						height:
+							46px;
+						margin:
+							0 15px;
+						background:
+							url(/images/system/bg/sprite.png) -182px 0;
+						margin:
+							15px;
+					}
+					form{
+						float:
+							left;
+						width:
+							50%;
+						margin:
+							0px 40px;
+						input[type=email]{
+							width:
+								100%;
+							border:
+								1px solid #C0C0C0;
+							border-radius:
+								3px;
+							-moz-border-radius:
+								3px;
+							-webkit-border-radius:
+								3px;			
+						}
+						input[type=submit]{
+							border:
+								1px solid #5a5800;
+							border-radius:
+								10px;
+							-moz-border-radius:
+								10px;
+							-webkit-border-radius:
+								10px;	
+							background:
+								#8e8e8e;
+							float:
+								right;
+							margin:
+								8px 0 20px 0;
+							color:
+								white;
+							font-family:
+								"HelveticaNeueLT65MediumRegula";
+							text-transform:
+								uppercase;
+							padding:
+								2px 10px 0 10px;
+						}
+					}
+					ul{
+						float:
+							left;
+						width:
+							100px;
+						margin:
+							10px 0 0 50px;
+						li{
+							width:
+								100%;
+							float:
+								left;
+							margin-bottom:
+								6px;
+							img,p{
+								float:
+									left;
+							}
+							p{
+								margin:
+									5px 0 0 10px;
+							}
+						}
+					}	
+				}
+				.first{
+					margin-top:
+						0px;
+					padding:
+						40px 0 20px 0;							
+				}
 			}
 		}
 	}

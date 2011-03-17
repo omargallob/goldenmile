@@ -5,4 +5,5 @@ en:
   hello: "Hello world"
   nav:
     admin:
-      overview: "Overview"
+      overview: "Overview"  
+      property_types: "Property Types"

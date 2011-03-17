@@ -6,6 +6,8 @@ javascripts:
     - public/javascripts/rails.js  
     - public/javascripts/jquery.prettyPhoto.js    
     - public/javascripts/application.js
+    - public/ninjaui/javascripts/jquery.ninjaui.js
+    - public/javascripts/jquery.groupRows.js
   
 
 stylesheets:
@@ -14,3 +16,4 @@ stylesheets:
     - public/stylesheets/prettyPhoto.css
     - public/fonts/fonts.css
     - public/stylesheets/forms.css
+    - public/ninjaui/stylesheets/ninjaui.css

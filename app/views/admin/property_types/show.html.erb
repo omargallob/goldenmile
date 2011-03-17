@@ -1,0 +1,20 @@
+<% title "Property Type" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @property_type.name %>
+</p>
+<p>
+  <strong>Title:</strong>
+  <%= @property_type.title %>
+</p>
+<p>
+  <strong>Parent:</strong>
+  <%= @property_type.parent_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_admin_property_type_path(@property_type) %> |
+  <%= link_to "Destroy", admin_property_type_path(@property_type), :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", admin_property_types_path %>
+</p>

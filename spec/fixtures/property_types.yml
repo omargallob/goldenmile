@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  title: MyString
+  parent_id: 1
+
+two:
+  name: MyString
+  title: MyString
+  parent_id: 1

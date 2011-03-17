@@ -1,0 +1,9 @@
+<tr class="<%= 'parent'  if property_type.parent.blank? %><%= 'parent_'+ property_type.parent_id.to_s unless property_type.parent.blank? %> groupRow">
+
+  <td class="title"><%= " - " unless property_type.parent.blank? %> <%= property_type.title %></td>
+  <td ><%= property_type.parent_id %></td>
+  <td><%= link_to "Show", admin_property_type_path(property_type)  %></td>
+  <td><%= link_to "&nbsp;".html_safe, edit_admin_property_type_path(property_type), :class=>"edit_button" %></td>
+  <td><%= link_to "&nbsp;".html_safe, admin_property_type_path(property_type) , :confirm => 'Are you sure?', :method => :delete, :class=>"delete_button" %></td>
+</tr>
+<%= render :partial => property_type.subtypes %>

@@ -1,0 +1,7 @@
+<%= simple_form_for [:admin, @property_type] do |f| %>
+  <%= f.input :name %>
+  <%= f.input :title %>
+  <%= f.association :parent, :collection => PropertyType.all %>
+ 
+  <p><%= f.submit %></p>
+<% end %>

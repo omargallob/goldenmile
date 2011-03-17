@@ -1,0 +1,20 @@
+<% title "Property Types" %>
+
+<table id="list">
+  <tr class="headerRow">
+    <th class="title">Title</th>
+    <th>Parent</th>
+  </tr>
+  <%= render :partial =>  @property_types %>
+</table>
+
+<p><%= link_to "New Property Type", new_admin_property_type_path %></p>
+<% content_for(:script) do %>
+<script>
+$(document).ready(function(){
+
+$('.edit_button').ninjaIconCreate('edit');
+$('.delete_button').ninjaIconCreate('remove');
+});
+</script>
+<% end %>

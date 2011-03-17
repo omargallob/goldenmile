@@ -21,6 +21,7 @@
 		
  		<%= javascript_include_tag "modernizr-1.6.min" %>
  		<%= include_stylesheets :common %>
+
     <%= yield(:head) %>
   </head>
   <body>
@@ -39,11 +40,13 @@
 			<section id="main">
 				<%= content_tag :h1, yield(:title) if show_title? %>
 				<section id="left-column" class="box">
+					<%= yield(:left_column) %>
 				</section>
 				<section id="center" class="box">
 					      <%= yield %> 
 				</section>
 				<section id="right-column" class="box">
+					<%= yield(:right_column) %>
 				</section>
 				
 

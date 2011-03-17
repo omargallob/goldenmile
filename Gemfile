@@ -5,7 +5,7 @@ gem 'rails', '3.0.4'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'mysql2'
 
 gem 'jquery-rails'
 
@@ -33,6 +33,7 @@ gem "auto_html"
 gem 'tiny_mce'
 gem 'truncate_html'
 gem 'kaminari'
+gem 'ninjaui'
 
 #i18n
 #gem "globalize3"
@@ -70,3 +71,4 @@ gem 'bson_ext'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test

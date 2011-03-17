@@ -1,0 +1,18 @@
+<% title "Properties#index" %>
+<h2>Property Search</h2>
+
+<% content_for(:left_column) do %>
+<%= render :partial => "left" %>
+<% end %>
+<% content_for(:right_column) do %>
+<%= render :partial => "right" %>
+<% end %>
+
+
+<% content_for(:script) do %>
+<script>
+$(document).ready(function(){
+	$("#accordion").accordion();
+});
+</script>
+<% end %>

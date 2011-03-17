@@ -1,0 +1,15 @@
+<% title "Listing Types" %>
+
+<table id="list">
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+	<%= render :partial => @types %>
+</table>
+
+<br />
+
+<%= link_to 'New Type', new_admin_type_path %>
