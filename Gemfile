@@ -33,7 +33,7 @@ gem "auto_html"
 gem 'tiny_mce'
 gem 'truncate_html'
 gem 'kaminari'
-gem 'ninjaui'
+#gem 'ninjaui'
 
 #i18n
 #gem "globalize3"
