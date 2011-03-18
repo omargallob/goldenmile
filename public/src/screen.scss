@@ -94,27 +94,28 @@ body{
 		font-family:
 			"HelveticaNeueLT65MediumRegula";
 	}
+	footer{
+		display:
+			block;
+		height:
+			235px;
+		background:
+			url(/images/system/bg/footer.png) repeat-x top center;
+		position:
+			relative;
+		left:
+			0px;
+		width:
+			100%;
+		float:
+			left;
+	}	
+	
 	#wrapper{
 		width: 	
 			960px;
 		margin:
 			0px auto;
-		footer{
-			display:
-				block;
-			height:
-				80px;
-			background:
-				green;
-			position:
-				relative;
-			left:
-				0px;
-			width:
-				100%;
-			float:
-				left;
-		}	
 		header{
 			width:
 				940px;
