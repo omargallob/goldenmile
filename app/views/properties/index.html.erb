@@ -1,5 +1,5 @@
 <% title "Properties#index" %>
-<div id="main">
+<div id="main" class="colored">
 	<h2>Property Search</h2>
 	<%= image_tag "system/static/search_property.png", :id => "static_search_property" %>
 	<h2>Featured Properties</h2>
@@ -20,9 +20,26 @@
 		<li>                                                                                                                                                                                                                                                                                                          
 			<h3><strong>Sell</strong><br/> Property</h3>                                                                                                                                                                                                                                                                
 			<p>Donec ullamcorper nulla non metus auctor fringilla. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-					<p><%= link_to "<strong>sell</strong> property".html_safe,"#" %></p>
+			<p><%= link_to "<strong>sell</strong> property".html_safe,"#" %></p>
 		</li>
 	</ul>
+</div>
+<div id="recent" class="colored">
+	<h2>Popular Searches</h2>
+	<section id="property_types" class="left">
+		<h4>Property Types</h4>
+		<p>Villas For Sale<br/>
+		Apartments For Sale<br/>
+		New Builds For Sale<br/>
+		Duplexes For Sale</p>
+	</section>
+	<section id="property_locations">
+		<h4>Property Locations</h4>
+		<p>Villas For Sale<br/>
+		Apartments For Sale<br/>
+		New Builds For Sale<br/>
+		Duplexes For Sale</p>
+	</section>
 </div>
 <% content_for(:left_column) do %>
 <%= render :partial => "left" %>
