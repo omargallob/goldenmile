@@ -99,6 +99,22 @@ body{
 			960px;
 		margin:
 			0px auto;
+		footer{
+			display:
+				block;
+			height:
+				80px;
+			background:
+				green;
+			position:
+				relative;
+			left:
+				0px;
+			width:
+				100%;
+			float:
+				left;
+		}	
 		header{
 			width:
 				940px;
@@ -321,7 +337,7 @@ body{
 						float:
 							left;
 						font-family:						
-							Verdana;
+							"HelveticaNeueLTCom45Light";
 						font-size:
 							10px;
 						line-height:
@@ -329,15 +345,15 @@ body{
 						-webkit-column-count:
 						 	2;
 						-webkit-column-gap: 
-							12px;
+							10px;
 						-moz-column-count: 
 							2;
 						-moz-column-gap: 
-							15px;
+							10px;
 						column-count: 
 							2;
 						column-gap: 
-							15px;							
+							10px;							
 					}
 					p.left{
 						padding-left:
