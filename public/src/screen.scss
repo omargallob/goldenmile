@@ -4,6 +4,42 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@mixin buttons-gradient{
+	a.button{
+		padding:
+			4px 10px;
+		background:
+			url(/images/system/bg/buttons.png) repeat-x;
+		text-shadow:
+			0 1px black;
+		-moz-text-shadow:
+			0 1px black;							
+		-webkit-text-shadow:
+			0 1px black;	
+		font-size:
+			12px;			
+		color:
+			white;
+		border:
+			1px solid #5a5800;
+		border-radius:
+			10px;
+		-moz-border-radius:
+			10px;
+		-webkit-border-radius:
+			10px;	
+		margin-right:
+			10px;
+		box-shadow:
+			inset 0 0 10px #a6a335;
+		-webkit-box-shadow:
+			inset 0 0 10px #a6a335;
+		-moz-box-shadow:
+			inset 0 0 10px #a6a335;
+		font-family:
+			"HelveticaNeueLTCom45Light";
+	}
+}
 @mixin buttons{
 	a{
 		border:
@@ -116,6 +152,8 @@ body{
 				0px auto;
 			padding:
 				40px;
+			height:
+				112px;
 			ul{
 				width:
 					160px;
@@ -347,6 +385,15 @@ body{
 					0px;
 				float:
 					left;
+				#slider-range{
+					margin-bottom:
+						10px;
+				}	
+				@include buttons-gradient;
+				a.button{
+					float:
+						left;
+				}
 				#recent{
 					width:
 						100%;
@@ -417,6 +464,44 @@ body{
 					-webkit-border-radius:
 						3px;
 				}
+				form{
+					float:
+						left;
+					padding:
+						0 40px;
+					width:
+						400px;
+					font-size:
+						10px;
+					select{
+						padding:
+							4px;
+						float:
+							left;
+						border:
+							1px solid #d9d9d9;
+						width:
+							120px;
+						margin:
+							5px 5px 0 0;
+						border-radius:
+							3px;
+						-moz-border-radius:
+							3px;
+						-webkit-border-radius:
+							3px;							
+						font-size:
+							10px;
+					}
+					label{
+						width:
+						 100%;
+						float:	
+							left;
+						margin:
+							10px 5px;
+					}
+				}
 				ul.properties{
 					padding:
 						25px 40px;
@@ -456,30 +541,7 @@ body{
 								12px;
 							color:
 								#4e4e4e;
-							a.button{
-								padding:
-									4px 10px;
-								background:
-									url(/images/system/bg/buttons.png) repeat-x;
-								color:
-									white;
-								border:
-									1px solid #5a5800;
-								border-radius:
-									10px;
-								-moz-border-radius:
-									10px;
-								-webkit-border-radius:
-									10px;	
-								margin-right:
-									10px;
-								box-shadow:
-									inset 0 0 10px #a6a335;
-								-webkit-box-shadow:
-									inset 0 0 10px #a6a335;
-								-moz-box-shadow:
-									inset 0 0 10px #a6a335;
-							}
+							@include buttons-gradient;					
 						}
 						img{
 							float:
