@@ -1,0 +1,22 @@
+<% title "Properties#show" %>
+<div id="main" class="colored">
+	<h2>Property Show</h2>
+	<%= image_tag "system/static/search_property.png", :id => "static_search_property" %>
+	<h2>Property Info </h2>
+	
+</div>
+<% content_for(:left_column) do %>
+<%= render :partial => "left" %>
+<% end %>
+<% content_for(:right_column) do %>
+<%= render :partial => "right" %>
+<% end %>
+
+
+<% content_for(:script) do %>
+<script>
+$(document).ready(function(){
+	$("#accordion").accordion();
+});
+</script>
+<% end %>

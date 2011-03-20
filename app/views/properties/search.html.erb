@@ -1,0 +1,41 @@
+<% title "Properties#search" %>
+<div id="main" class="colored">
+	<h2>Property Search</h2>
+	<%= image_tag "system/static/search_property.png", :id => "static_search_property" %>
+	<h2>Search Results</h2>
+	<ul id="search_properties" class="properties">
+		<li>
+			<%= image_tag "system/static/featured_property_image.png" %>
+			<h5>400,000 €</h5>
+			<p><i>7 bedrooms, 4 bathrooms</i></p>
+			<p class="address"> 	12 Melrose Place<br>
+				Marbella, Costa del Sol, Spain<br>
+				VT-0086-13</p>
+			<p><%= link_to "view property", property_path(30), :class=>"button" %><%= link_to "contact us", "#", :class=>"button" %></p>
+		</li>
+			<li>
+				<%= image_tag "system/static/featured_property_image.png" %>
+				<h5>400,000 €</h5>
+				<p><i>7 bedrooms, 4 bathrooms</i></p>
+				<p class="address"> 	12 Melrose Place<br>
+					Marbella, Costa del Sol, Spain<br>
+					VT-0086-13</p>
+				<p><%= link_to "view property", property_path(30), :class=>"button" %><%= link_to "contact us", "#", :class=>"button" %></p>
+			</li>
+	</ul>
+</div>
+<% content_for(:left_column) do %>
+<%= render :partial => "left" %>
+<% end %>
+<% content_for(:right_column) do %>
+<%= render :partial => "right" %>
+<% end %>
+
+
+<% content_for(:script) do %>
+<script>
+$(document).ready(function(){
+	$("#accordion").accordion();
+});
+</script>
+<% end %>

@@ -3,7 +3,7 @@ Goldenmile::Application.routes.draw do
 
 
   #get "properties/index"
-
+  match "properties/search" => "properties#search"
   resources :properties
 
   devise_for :admins
