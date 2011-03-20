@@ -340,8 +340,8 @@ body #wrapper section#main #center .colored {
 /* line 467, ../src/screen.scss */
 body #wrapper section#main #center form {
   float: left;
-  padding: 0 40px;
-  width: 400px;
+  padding: 0 40px 20px;
+  width: 440px;
   font-size: 10px;
 }
 /* line 476, ../src/screen.scss */
