@@ -7,3 +7,5 @@ en:
     admin:
       overview: "Overview"  
       property_types: "Property Types"
+      pages: "Pages"
+      sections: "Sections"

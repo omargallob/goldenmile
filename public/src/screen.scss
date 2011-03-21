@@ -27,7 +27,7 @@
 		-moz-border-radius:
 			10px;
 		-webkit-border-radius:
-			10px;	
+			5px;	
 		margin-right:
 			10px;
 		box-shadow:
@@ -38,6 +38,16 @@
 			inset 0 0 10px #a6a335;
 		font-family:
 			"HelveticaNeueLTCom45Light";
+	}
+	a.button:hover{
+		color:
+			#888888;
+		box-shadow:
+			inset 0 0 5px #a6a335;
+		-webkit-box-shadow:
+			inset 0 0 5px #a6a335;
+		-moz-box-shadow:
+			inset 0 0 5px #a6a335;	
 	}
 }
 @mixin buttons{
@@ -344,8 +354,8 @@ body{
 						a{
 							font-family:
 								"HelveticaNeueLTCom45Light";
-							margin:
-								7px 0 0 10px;
+							padding:
+								9px 0 10px 10px;
 							float:
 								left;
 							color:
@@ -354,6 +364,8 @@ body{
 								none;
 							font-size:
 								12px;
+							width:
+								130px;
 						}
 					}
 					ul.sublevel1{
@@ -493,7 +505,7 @@ body{
 						font-size:
 							10px;
 					}
-					label{
+					label.title{
 						width:
 						 100%;
 						float:	
@@ -504,18 +516,32 @@ body{
 				}
 				ul.properties{
 					padding:
-						25px 40px;
+						25px 0px;
 					float:
 						left;
-					li{
+					li.featured{
 						width:
-							440px;
+							423px;
+						height:
+							103px;
+						background:
+							url(/images/system/bg/sprite.png) 0 -152px;
+						margin:
+							0;
+						padding:
+							20px 40px;
+						margin:
+							0 10px 15px 10px;
+					}
+					li{
+						padding:
+							20px 40px;
+						margin:
+							0 10px 15px 10px;
+						width:
+							423px;	
 						float:
 							left;
-						padding-bottom:
-							15px;
-						margin-bottom:
-							15px;
 						border-bottom:
 							1px solid white;
 						h5{
@@ -532,9 +558,25 @@ body{
 							margin-top:
 								15px;
 						}
-						p{
+						p.links{
+							float:
+								right;
+							margin:
+								-20px -15px 0 0px;
+							a{
+								span.ui-icon{
+									margin-top:
+										-9px;
+								}
+							}
+						}
+						p.code{
 							margin-top:
 								10px;
+						}
+						p{
+							margin-top:
+								5px;
 							font-family:						
 								"HelveticaNeueLT55RomanRegular";
 							font-size:
@@ -548,10 +590,6 @@ body{
 								left;
 							margin-right:
 								15px;
-							width:
-								151px;
-							height:
-								110px;
 							padding:
 								5px;
 							border:
@@ -643,6 +681,8 @@ body{
 						15px;
 				}
 				table#list{
+					width:
+						521px;
 					tr.hover{
 						background:
 							red;

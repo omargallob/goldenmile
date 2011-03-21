@@ -50,11 +50,13 @@
   float: left;
   width: 100px;
   text-align: right;
-  margin: 2px 10px;
+  margin: 7px 10px;
+	font-family:Verdana;
 }
 
 .simple_form div.input {
   margin-bottom: 10px;
+	float:left;
 }
 .simple_form div.input input[type=text],.simple_form div.input input[type=email],.simple_form div.input input[type=tel],.simple_form div.input input[type=password] {
 	width:200px;

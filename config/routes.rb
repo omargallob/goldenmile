@@ -2,18 +2,28 @@ Goldenmile::Application.routes.draw do
  
 
 
+
+
+
+
   #get "properties/index"
   match "properties/search" => "properties#search"
-  resources :properties
 
+  resources :properties
   devise_for :admins
 
  namespace "admin" do 
-   scope 'properties' do     
-     resources :types do 
-       resources :subtypes
-     end
-   end
+   
+   resources :pages
+   resources :sections
+   # resources :sections
+   # resources :pages
+   # scope 'properties' do     
+   #    resources :property_types 
+   #   # resources :types do 
+   #   #        resources :subtypes
+   #   #      end
+   # end
    root :to => "overview#index"
  end 
   root :to => "home#index"

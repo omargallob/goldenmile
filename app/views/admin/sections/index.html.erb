@@ -1,0 +1,22 @@
+<% title "Listing sections" %>
+<div id="main" class="colored">
+<table id="list">
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+	<%= render :partial => @sections %>
+</table>
+</div>
+
+<% content_for(:left_column) do %>
+
+<ul>
+	<li class="level1">
+	<%= link_to 'New Section', new_admin_section_path %>
+	</li>
+</ul>
+
+<% end %>

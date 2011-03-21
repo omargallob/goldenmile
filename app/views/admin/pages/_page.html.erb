@@ -1,0 +1,10 @@
+<tr>
+   <td><%= page.name %></td>
+   <td><%= page.navlabel %></td>
+   <td><%= page.title %></td>
+   <td><%= page.category %></td>
+   <td><%= page.body %></td>
+   <td><%= link_to 'Show', page %></td>
+   <td><%= link_to 'Edit', edit_page_path(page) %></td>
+   <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
+ </tr>

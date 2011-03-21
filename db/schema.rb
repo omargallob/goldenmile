@@ -10,12 +10,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110316174757) do
+ActiveRecord::Schema.define(:version => 20110321163629) do
+
+  create_table "pages", :force => true do |t|
+    t.string   "name"
+    t.string   "title"
+    t.string   "navlabel"
+    t.text     "description"
+    t.integer  "position"
+    t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "property_types", :force => true do |t|
     t.string   "name"
     t.string   "title"
     t.integer  "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "sections", :force => true do |t|
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
