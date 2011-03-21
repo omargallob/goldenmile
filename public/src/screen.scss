@@ -120,6 +120,10 @@ body{
 		100%;
 	background:
 		white url(/images/system/bg/properties.png) top center no-repeat;
+	font-family:
+		Verdana;
+	font-size:
+		10px;
 	a{
 		color:
 			#4e4e4e;
@@ -480,11 +484,15 @@ body{
 					float:
 						left;
 					padding:
-						0 40px 20px;
+						10px 30px;
 					width:
 						440px;
 					font-size:
 						10px;
+					margin:
+						10px;
+					border-bottom:
+						1px solid white;
 					select{
 						padding:
 							4px;
@@ -512,6 +520,28 @@ body{
 							left;
 						margin:
 							10px 5px;
+					}
+				}
+				nav.pagination{
+					float:
+						right;
+					margin:
+						0px 25px;
+					color:
+						#b3b15f;
+					font-size:
+						12px;
+					a{
+						color:
+							#b3b15f;
+					}
+					a:hover{
+						text-decoration:
+							underline;
+					}
+					span.current{
+						color:
+							#888888;
 					}
 				}
 				ul.properties{

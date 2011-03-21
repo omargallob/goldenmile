@@ -13,25 +13,19 @@
 			<p class="code">	VT-0086-13</p>
 			<p class="links"><%= link_to "details", property_path(30), :class=>"button plus" %><%= link_to "contact us", "#", :class=>"button contact" %></p>
 		</li>
-		<li>
-			<%= image_tag "system/static/featured_property_image.png", :width =>"120" %>
-			<h5>400,000 €</h5>
-			<p><i>7 bedrooms, 4 bathrooms</i></p>
-			<p class="address"> 	12 Melrose Place<br>
-				Marbella, Costa del Sol, Spain</p>
-			<p class="code">	VT-0086-13</p>
-			<p class="links"><%= link_to "details", property_path(30), :class=>"button plus" %><%= link_to "contact us", "#", :class=>"button contact" %></p>
-		</li>
-			<li>
-				<%= image_tag "system/static/featured_property_image.png", :width =>"120" %>
-				<h5>400,000 €</h5>
-				<p><i>7 bedrooms, 4 bathrooms</i></p>
-				<p class="address"> 	12 Melrose Place<br>
-						Marbella, Costa del Sol, Spain</p>
-					<p class="code">	VT-0086-13</p>
-					<p class="links"><%= link_to "details", property_path(30), :class=>"button plus" %><%= link_to "contact us", "#", :class=>"button contact" %></p>
-			</li>
+		<%= render :partial => "property" %>
+		<%= render :partial => "property" %>
 	</ul>
+	<nav class="pagination">
+	  <span class="prev"></span>
+    <span class="page current">1</span>
+    <span class="page last">
+			<a href="#">2</a>
+		</span>
+	  <span class="next">
+			<a rel="next" class="next" href="#">next</a>
+		</span>
+	</nav>
 </div>
 <% content_for(:left_column) do %>
 <%= render :partial => "left" %>
@@ -45,35 +39,8 @@
 $(document).ready(function(){
 	//$('select').selectmenu();
 
-		$(function() {
-			$( "#slider-range" ).slider({
-				range: true,
-				min: 0,
-				max: 2000000,
-				values: [ 350000, 1500000 ],
-				slide: function( event, ui ) {
-					$( "#amount" ).html( "€" + ui.values[ 0 ] + " - €" + ui.values[ 1 ] );
-				}
-			});
-			$( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-				" - $" + $( "#slider-range" ).slider( "values", 1 ) );
-		});
-		$("form button, a.search").button({
-		            icons: {
-		               primary: "ui-icon-search"
-		            }
-		});
-		$("a.contact").button({
-		            icons: {
-		                primary: "ui-icon-mail-closed"
-		            }
-		});
-		$("a.plus").button({
-			icons:{
-				primary:"ui-icon-plus"
-			}
-		})
-
+	
+	
 });
 </script>
 <% end %>

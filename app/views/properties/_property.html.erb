@@ -1,9 +1,9 @@
 <li>
-	<%= image_tag "system/static/featured_property_image.png" %>
+	<%= image_tag "system/static/featured_property_image.png", :width =>"120" %>
 	<h5>400,000 €</h5>
 	<p><i>7 bedrooms, 4 bathrooms</i></p>
 	<p class="address"> 	12 Melrose Place<br>
-		Marbella, Costa del Sol, Spain<br>
-		VT-0086-13</p>
-	<p><%= link_to "view property", property_path(30), :class=>"button search" %><%= link_to "contact us", "#", :class=>"button contact" %></p>
+		Marbella, Costa del Sol, Spain</p>
+	<p class="code">	VT-0086-13</p>
+	<p class="links"><%= link_to "details", property_path(30), :class=>"button plus" %><%= link_to "contact us", "#", :class=>"button contact" %></p>
 </li>

@@ -56,29 +56,7 @@
 $(document).ready(function(){
 	//$('select').selectmenu();
 
-		$(function() {
-			$( "#slider-range" ).slider({
-				range: true,
-				min: 0,
-				max: 2000000,
-				values: [ 350000, 1500000 ],
-				slide: function( event, ui ) {
-					$( "#amount" ).html( "€" + ui.values[ 0 ] + " - €" + ui.values[ 1 ] );
-				}
-			});
-			$( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-				" - $" + $( "#slider-range" ).slider( "values", 1 ) );
-		});
-		$("form button, a.search").button({
-		            icons: {
-		                primary: "ui-icon-search"
-		            }
-		});
-		$("a.contact").button({
-		            icons: {
-		                primary: "ui-icon-mail-closed"
-		            }
-		});
+
 
 });
 </script>
