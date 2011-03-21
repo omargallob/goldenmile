@@ -69,6 +69,16 @@ $(document).ready(function(){
 			$( "#amount" ).html( "$" + $( "#slider-range" ).slider( "values", 0 ) +
 				" - $" + $( "#slider-range" ).slider( "values", 1 ) );
 		});
+		$("form button, a.search").button({
+		            icons: {
+		                primary: "ui-icon-search"
+		            }
+		});
+		$("a.contact").button({
+		            icons: {
+		                primary: "ui-icon-mail-closed"
+		            }
+		});
 
 });
 </script>

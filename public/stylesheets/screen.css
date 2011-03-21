@@ -267,7 +267,7 @@ body #wrapper section#main #center #slider-range {
 }
 /* line 8, ../src/screen.scss */
 body #wrapper section#main #center a.button {
-  padding: 4px 10px;
+  padding: 4px;
   background: url(/images/system/bg/buttons.png) repeat-x;
   text-shadow: 0 1px black;
   -moz-text-shadow: 0 1px black;
@@ -395,7 +395,7 @@ body #wrapper section#main #center ul.properties li p {
 }
 /* line 8, ../src/screen.scss */
 body #wrapper section#main #center ul.properties li p a.button {
-  padding: 4px 10px;
+  padding: 4px;
   background: url(/images/system/bg/buttons.png) repeat-x;
   text-shadow: 0 1px black;
   -moz-text-shadow: 0 1px black;
