@@ -1,7 +1,10 @@
 <% title "Properties#show" %>
+<div id="search-info" class="colored">
+	<p><strong>Search Results</strong> > <span>124 properties</span> match your criteria</p>
+</div>
 <div id="main" class="colored">
-	<h2>Property Show</h2>
-	<%= image_tag "system/static/search_property.png", :id => "static_search_property" %>
+	<h2>Property Search</h2>
+	<%= render :partial => "search" %>
 	<h2>Property Info </h2>
 	
 </div>
