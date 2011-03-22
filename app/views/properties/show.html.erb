@@ -39,9 +39,35 @@
 		<section id="article_description">
 				<h2>Property Description</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h2>Interested?</h2>
+				<p><a hred="#" class="contact">Contact</a></p>
 		</section>
 			
 	</article>
+	<h2 class="header">Similar Properties</h2>
+	<ul id="search_properties" class="properties">
+		<li class="featured">
+			<%= image_tag "system/static/featured_property_image.png", :width =>"120" %>
+			<h5>400,000 €</h5>
+			<p><i>7 bedrooms, 4 bathrooms</i></p>
+			<p class="address"> 	12 Melrose Place<br>
+				Marbella, Costa del Sol, Spain</p>
+			<p class="code">	VT-0086-13</p>
+			<p class="links"><%= link_to "details", property_path(30), :class=>"button plus" %><%= link_to "contact us", "#", :class=>"button contact" %></p>
+		</li>
+		<%= render :partial => "property" %>
+		<%= render :partial => "property" %>
+	</ul>
+	<nav class="pagination">
+	  <span class="prev"></span>
+    <span class="page current">1</span>
+    <span class="page last">
+			<a href="#">2</a>
+		</span>
+	  <span class="next">
+			<a rel="next" class="next" href="#">next</a>
+		</span>
+	</nav>
 </div>
 <% content_for(:left_column) do %>
 <%= render :partial => "left" %>

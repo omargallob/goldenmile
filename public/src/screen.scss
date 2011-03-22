@@ -359,6 +359,14 @@ body{
 				float:
 					left;
 			}
+			h2.header{
+				margin:
+					25px 0 0 40px;
+				width:
+					100%;
+				float:
+					left;
+			}
 			h2{
 				font-family:
 					"HelveticaNeueLT55RomanRegular";
@@ -468,6 +476,8 @@ body{
 						left;
 				}
 				article{
+					border-bottom:
+						1px solid white;
 					font-size:
 						11px;
 					width:
