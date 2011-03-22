@@ -1,2 +1,13 @@
 <% title "Home Index" %>
 
+<% content_for(:left_column) do %>
+	<% @categories.each_with_index do |c,i| %>
+	<h2><%= @categories[i] %></h2>
+	<ul>
+		<% @pages[i].each do |p| %>
+		<li class="level1"><%= link_to p.navlabel,"#" %></li>
+		<% end %>
+	</ul>
+
+	<% end %>
+<% end %>
