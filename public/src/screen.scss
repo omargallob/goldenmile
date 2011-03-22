@@ -4,6 +4,68 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+@mixin center_style{
+	h5{
+		font-size:
+			25px;
+		font-family:
+			"HelveticaNeueLT55RomanRegular";
+		color:
+			#838700;
+		font-weight:
+			bold;
+	}
+	p.address{
+		margin-top:
+			15px;
+	}
+	p.links{
+		float:
+			right;
+		margin:
+			-20px -15px 0 0px;
+		a{
+			span.ui-icon{
+				margin-top:
+					-9px;
+			}
+		}
+	}
+	p.code{
+		margin-top:
+			10px;
+	}
+	p{
+		margin-top:
+			5px;
+		font-family:						
+			"HelveticaNeueLT55RomanRegular";
+		font-size:
+			12px;
+		color:
+			#4e4e4e;
+		@include buttons-gradient;					
+	}
+	img{
+		float:
+			left;
+		margin-right:
+			15px;
+		padding:
+			5px;
+		border:
+			1px solid black;
+		background:
+			#878300;
+		border-radius:
+			3px;
+		-moz-border-radius:
+			3px;
+		-webkit-border-radius:
+			3px;							
+	}
+}
 @mixin buttons-gradient{
 	a.button{
 		padding:
@@ -30,24 +92,13 @@
 			5px;	
 		margin-right:
 			10px;
-		box-shadow:
-			inset 0 0 10px #a6a335;
-		-webkit-box-shadow:
-			inset 0 0 10px #a6a335;
-		-moz-box-shadow:
-			inset 0 0 10px #a6a335;
 		font-family:
 			"HelveticaNeueLTCom45Light";
 	}
 	a.button:hover{
 		color:
 			#888888;
-		box-shadow:
-			inset 0 0 5px #a6a335;
-		-webkit-box-shadow:
-			inset 0 0 5px #a6a335;
-		-moz-box-shadow:
-			inset 0 0 5px #a6a335;	
+
 	}
 }
 @mixin buttons{
@@ -302,6 +353,12 @@ body{
 					860px;
 				
 			}
+			h2.lower{
+				margin:
+					25px 0 0 40px;
+				float:
+					left;
+			}
 			h2{
 				font-family:
 					"HelveticaNeueLT55RomanRegular";
@@ -409,6 +466,69 @@ body{
 				a.button{
 					float:
 						left;
+				}
+				article{
+					font-size:
+						11px;
+					width:
+						440px;
+					padding:
+						20px 30px;
+					background:
+						transparent;
+					float:
+						left;
+					margin:
+						0px 10px;
+						
+					@include center_style;
+
+					detail{
+						float:
+							left;
+						width:
+							150px;
+						p{
+							margin-top:
+								10px;
+						}
+					}
+					section#article_description{
+						float:
+							left;
+						width:
+							134px;
+						padding-left:
+							36px;							
+					}
+					detail{
+						margin-left:
+							30px;
+					}
+					section{
+						width:
+							224px;
+						padding:
+							0 10px;
+						h2{
+							margin:
+								25px 0 0 0;
+							text-transform:
+								none;
+						}
+						p{
+							font-size:
+								11px;
+							line-height:
+								18px;
+						}
+					}
+					section#detailed{
+						float:
+							left;
+						width:
+							230px;
+					}
 				}
 				#recent{
 					width:
@@ -608,65 +728,7 @@ body{
 							left;
 						border-bottom:
 							1px solid white;
-						h5{
-							font-size:
-								25px;
-							font-family:
-								"HelveticaNeueLT55RomanRegular";
-							color:
-								#838700;
-							font-weight:
-								bold;
-						}
-						p.address{
-							margin-top:
-								15px;
-						}
-						p.links{
-							float:
-								right;
-							margin:
-								-20px -15px 0 0px;
-							a{
-								span.ui-icon{
-									margin-top:
-										-9px;
-								}
-							}
-						}
-						p.code{
-							margin-top:
-								10px;
-						}
-						p{
-							margin-top:
-								5px;
-							font-family:						
-								"HelveticaNeueLT55RomanRegular";
-							font-size:
-								12px;
-							color:
-								#4e4e4e;
-							@include buttons-gradient;					
-						}
-						img{
-							float:
-								left;
-							margin-right:
-								15px;
-							padding:
-								5px;
-							border:
-								1px solid black;
-							background:
-								#878300;
-							border-radius:
-								3px;
-							-moz-border-radius:
-								3px;
-							-webkit-border-radius:
-								3px;							
-						}
+						@include center_style;
 					}
 				}
 				#tricolumn{

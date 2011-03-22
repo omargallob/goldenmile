@@ -5,8 +5,43 @@
 <div id="main" class="colored">
 	<h2>Property Search</h2>
 	<%= render :partial => "search" %>
-	<h2>Property Info </h2>
-	
+	<h2 class="lower">Property Info </h2>
+	<article>
+			<%= image_tag "system/static/show_property_large.png" %>
+			<detail>
+			<h5>400,000 €</h5>
+			<p><i>7 bedrooms, 4 bathrooms</i></p>
+			<p class="address"> 	12 Melrose Place<br/>
+				Marbella, Costa del Sol<br/> Spain, 29660</p>
+			<p class="code">	VT-0086-13</p>
+			<p>	Built Size: 2600 sqm<br/>
+			Plot Size: 3800 sqm<br/>
+			Parking: 4 Cars</p>
+			</detail>
+			<section id="detailed">
+				
+						<h2>Spec/Facilities</h2>
+						<p><strong>Furniture</strong>: Unfurnished<br/>
+						<strong>Home Appliances</strong>: Air Conditioning<br/>
+						<strong>Other Rooms</strong>: Roof Terrace, Dining Area, Fitted Kitchen, Living room<br/>
+						<strong>Security</strong>: Alarm system<br/>
+						<strong>Store Room</strong>: Storage<br/>
+						<strong>Condition</strong>: Renovated<br/>
+						<strong>Garden</strong>: Private garden, Community Garden<br/>
+						<strong>Swimming Pool</strong>: Community pool<br/>
+						<strong>Terrace</strong>: Terrace<br/>
+						<strong>Views</strong>: Sea Views, Mountain Views, Gardens<br/>
+						<strong>Bedroom</strong>: En suite bathroom<br/>
+						<strong>Kitchen</strong>: Luxury kitchen<br/>
+						<strong>Parking</strong>: Double parking</p>
+			</section>
+		
+		<section id="article_description">
+				<h2>Property Description</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</section>
+			
+	</article>
 </div>
 <% content_for(:left_column) do %>
 <%= render :partial => "left" %>
