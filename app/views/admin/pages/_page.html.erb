@@ -4,10 +4,10 @@
    <td><%= page.name %></td>
    <td><%= page.navlabel %></td>
 
-  <% unless @section.blank? %> <td><%= link_to 'Show', admin_section_page_path(@section.id,page.id) %></td>
+  <% unless @section.blank? %> <td><%= link_to 'Show ('+page.subpages.count.to_s+')', admin_section_page_path(@section.id,page.id) %></td>
    <td><%= link_to 'Edit', edit_admin_section_page_path(@section.id,page.id) %></td>
    <td><%= link_to 'Destroy', admin_section_page_path(@section.id, page.id), :confirm => 'Are you sure?', :method => :delete %></td><% else %>
-	<td><%= link_to 'Show', admin_page_path(page.id), :class=>"search" %></td>
+	<td><%= link_to 'Show ', admin_page_path(page.id), :class=>"search" %></td>
 	 <td><%= link_to 'Destroy', admin_page_path(page.id), :confirm => 'Are you sure?', :method => :delete %></td>
 	<% end %>
  </tr>

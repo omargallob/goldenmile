@@ -1,0 +1,15 @@
+
+<% title "Section: #{@section.name} > New subpage" %>
+<div id="main" class="colored">
+	<%= render 'form' %>
+</div>
+
+<% content_for(:left_column) do %>
+
+<ul>
+	<li class="level1">
+	<%= link_to 'Back', admin_section_pages_path(@section)  %>
+	</li>
+</ul>
+
+<% end %>

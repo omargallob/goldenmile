@@ -47,7 +47,7 @@ class  Admin::PagesController < Admin::BaseController
   def create
     @section = Section.find(params[:section_id])
     @page = Page.create(params[:page])
-
+    
 
     respond_to do |format|
       if @page.save

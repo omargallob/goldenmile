@@ -11,6 +11,13 @@
 
   <%= @page.body %>
 </p>
+
+<h2>Total Subpages <%= @page.subpages.count %></h2>
+<ul class="backend_list">
+<% @page.subpages.each do |s| %>
+<li><%= s.name %> - <%= link_to "show", admin_page_subpage_path(@page, s.id) %> - <%= link_to "edit", edit_admin_page_subpage_path(@page, s.id) %> - <%= link_to "delete",  admin_page_subpage_path(@page, s.id), :confirm => 'Are you sure?', :method => :delete %></li>
+<% end %>
+</ul>
 <h2>Total Galleries <%= @page.galleries.count %></h2>
 
 <% @page.galleries.each do |g| %>
@@ -27,6 +34,9 @@
 <% content_for(:left_column) do %>
 
 <ul>
+	<li class="level1">
+	<%= link_to 'New subpage', new_admin_page_subpage_path(@page)  %>
+	</li>
 	<li class="level1">
 	<%= link_to 'New gallery', new_admin_section_page_gallery_path(@section,@page)  %>
 	</li>

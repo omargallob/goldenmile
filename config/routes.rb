@@ -18,9 +18,13 @@ Goldenmile::Application.routes.draw do
    resources :galleries do 
      resources :uploads
     end
-  # resources :pages
+    match "/pages/:page_id/subpages/" => "subpages#create", :as => :page_pages
+  resources :pages   do
+    resources :subpages
+  end
    resources :sections do 
      resources :pages do
+       #resources :subpages 
        resources :galleries do 
           resources :uploads
          end

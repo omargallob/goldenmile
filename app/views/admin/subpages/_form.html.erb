@@ -1,0 +1,13 @@
+<%= simple_form_for([:admin,@page,@subpage]) do |f| %>
+
+
+	<%= f.input :name %>
+	<%= f.input :navlabel %>
+	<%= f.input :title %>
+	<%= f.input :category %>
+	<%= f.input :body, :as => :text %>
+	<!--  :collection => @section.pages.map{|x| x.category}.delete_if{|x| x.blank?}.uniq -->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

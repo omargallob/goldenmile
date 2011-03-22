@@ -3,8 +3,8 @@ class HomeController < ApplicationController
    # @section = Section.find(:first,:conditions =>{:name => "Property"})
     @categories  = Page.all.map{|c| c.category }.uniq 
     @pages = []
-    @categories.each_with_index do |c,i|
-      @pages[i] = Page.find(:all,:conditions =>{:category => "#{c}"})
+    @categories.delete_if{|cat| cat == "child"}.each_with_index do |c,i|
+        @pages[i] = Page.find(:all,:conditions =>{:category => "#{c}"})
     end
     #@pages = Page.find(:all,:conditions =>{:category => "Property Info"})
   end

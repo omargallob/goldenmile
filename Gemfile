@@ -48,7 +48,7 @@ group :test, :development do
 end
 gem 'mongoid', '2.0.0.rc.7'
 gem 'bson_ext'
-
+gem 'mongoid-tree', :require => 'mongoid/tree'
 # Use unicorn as the web server
 # gem 'unicorn'
 

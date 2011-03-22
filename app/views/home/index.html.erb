@@ -6,6 +6,9 @@
 	<ul>
 		<% @pages[i].each do |p| %>
 		<li class="level1"><%= link_to p.navlabel,"#" %></li>
+		 	<% p.subpages.each do |sp| %>
+			<li class="level2"><%= link_to sp.navlabel,"#" %></li>
+			<% end %>
 		<% end %>
 	</ul>
 
