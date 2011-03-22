@@ -1,6 +1,6 @@
 <tr>
   <td><%= section.name %></td>
-  <td><%= link_to 'Show', admin_section_path(section) %></td>
+  <td><%= link_to 'Show ('+section.pages.count.to_s+')', admin_section_path(section) %></td>
   <td><%= link_to 'Edit', edit_admin_section_path(section) %></td>
   <td><%= link_to 'Destroy', admin_section_path(section), :confirm => 'Are you sure?', :method => :delete %></td>
 </tr>

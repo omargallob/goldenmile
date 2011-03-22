@@ -1,30 +1,28 @@
-<p id="notice"><%= notice %></p>
+<% title "Section: #{@section.name} | #{@page.category} > #{@page.name}" %>
 
-<p>
-  <b>Name:</b>
-  <%= @page.name %>
-</p>
+<div id="main" class="colored">
 
-<p>
-  <b>Navlabel:</b>
-  <%= @page.navlabel %>
-</p>
-
-<p>
-  <b>Title:</b>
+<h2>
+  
   <%= @page.title %>
-</p>
+</h2>
 
 <p>
-  <b>Category:</b>
-  <%= @page.category %>
-</p>
 
-<p>
-  <b>Body:</b>
   <%= @page.body %>
 </p>
 
+</div>
 
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+<% content_for(:left_column) do %>
+
+<ul>
+	<li class="level1">
+	<%= link_to 'Edit', edit_admin_section_page_path(@section,@page)  %>
+	</li>
+	<li class="level1">
+	<%= link_to 'Back', admin_section_pages_path(@section)  %>
+	</li>
+</ul>
+
+<% end %>

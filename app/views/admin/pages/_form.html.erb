@@ -1,36 +1,12 @@
-<%= form_for(@page) do |f| %>
-  <% if @page.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
+<%= simple_form_for([:admin,@section,@page]) do |f| %>
 
-      <ul>
-      <% @page.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :navlabel %><br />
-    <%= f.text_field :navlabel %>
-  </div>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
-  </div>
-  <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_area :body %>
-  </div>
+	<%= f.input :name %>
+	<%= f.input :navlabel %>
+	<%= f.input :title %>
+	<%= f.input :category %>
+	<%= f.input :body, :as => :text %>
+	<!--  :collection => @section.pages.map{|x| x.category}.delete_if{|x| x.blank?}.uniq -->
   <div class="actions">
     <%= f.submit %>
   </div>

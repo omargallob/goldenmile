@@ -14,8 +14,10 @@ Goldenmile::Application.routes.draw do
 
  namespace "admin" do 
    
-   resources :pages
-   resources :sections
+ resources :pages
+   resources :sections do 
+     resources :pages
+   end 
    # resources :sections
    # resources :pages
    # scope 'properties' do     

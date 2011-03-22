@@ -14,7 +14,7 @@ class Admin::SectionsController < Admin::BaseController
   # GET /sections/1.xml
   def show
     @section = Section.find(params[:id])
-
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @section }
