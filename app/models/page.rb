@@ -6,6 +6,7 @@ class Page
   field :category 
   field :body
   referenced_in :section, :inverse_of => :pages
+  embeds_many :galleries
   validates_presence_of :name, :title, :navlabel, :category, :body
   validates_uniqueness_of :name
 end

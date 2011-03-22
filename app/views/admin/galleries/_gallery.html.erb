@@ -1,0 +1,8 @@
+<tr>
+  <td><%= gallery.title %></td>
+  <td><%= gallery.description %></td>
+  <td><%= gallery.uploads.count %></td>
+  <td><%= link_to 'Show', admin_gallery_path(gallery)  %></td>
+  <td><%= link_to 'Edit', edit_admin_gallery_path(gallery) %></td>
+  <td><%= link_to 'Destroy', admin_gallery_path(gallery), :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>

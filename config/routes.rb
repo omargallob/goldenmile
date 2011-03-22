@@ -6,6 +6,7 @@ Goldenmile::Application.routes.draw do
 
 
 
+
   #get "properties/index"
   match "properties/search" => "properties#search"
 
@@ -14,9 +15,16 @@ Goldenmile::Application.routes.draw do
 
  namespace "admin" do 
    
- resources :pages
+   resources :galleries do 
+     resources :uploads
+    end
+  # resources :pages
    resources :sections do 
-     resources :pages
+     resources :pages do
+       resources :galleries do 
+          resources :uploads
+         end
+     end 
    end 
    # resources :sections
    # resources :pages

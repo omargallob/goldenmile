@@ -1,0 +1,26 @@
+<% title "Listing galleries" %>
+<div id="main" class="colored">
+<table id="list">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Uploads</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+	<%= render :partial => @galleries %>
+</table>
+</table>
+</div>
+
+<% content_for(:left_column) do %>
+
+<ul>
+	<li class="level1">
+	<%= link_to 'New Gallery', new_admin_gallery_path  %>
+	</li>
+
+</ul>
+
+<% end %>

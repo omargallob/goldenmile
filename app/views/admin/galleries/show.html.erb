@@ -1,0 +1,38 @@
+<% title "Gallery Show: #{@gallery.title }" %>
+
+<div id="main" class="colored">
+<p>
+  <%= @gallery.description %>
+</p>
+<h2>Total Uploads: <%= @gallery.uploads.count %></h2>
+<ul class="backend_list">
+<% @gallery.uploads.delete_if{|x| x.title.blank?}.each do |u| %>
+<li><p><%= image_tag u.photo_url(:thumb_small).to_s %> | <%= link_to "delete", admin_section_page_gallery_upload_path(@page.section, @page,@gallery.id,u.id), :confirm => 'Are you sure?', :method => :delete %> </p></li>
+<% end%>
+</ul>
+<h2 class="lower">New Upload</h2>
+<%= simple_form_for([:admin,@page.section,@page,@gallery,@upload],:html => {:multipart => true}) do |f| %>
+
+	<%= f.input :title %>
+	<%= f.input :description, :as => :text %>
+		<%= f.input :photo, :as => :file %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>
+
+
+<% content_for(:left_column) do %>
+
+<ul>
+
+	<li class="level1">
+	<%= link_to 'Edit', edit_admin_gallery_path(@gallery)  %>
+	</li>
+	<li class="level1">
+	<%= link_to 'Back', admin_galleries_path  %>
+	</li>
+</ul>
+
+<% end %>

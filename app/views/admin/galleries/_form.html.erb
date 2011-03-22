@@ -1,0 +1,9 @@
+<%= simple_form_for([:admin,@page.section,@page,@gallery]) do |f| %>
+
+
+	<%= f.input :title %>
+	<%= f.input :description, :as => :text %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

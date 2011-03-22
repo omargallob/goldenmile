@@ -11,12 +11,25 @@
 
   <%= @page.body %>
 </p>
+<h2>Total Galleries <%= @page.galleries.count %></h2>
 
+<% @page.galleries.each do |g| %>
+<h2><%= g.title %> -  <%= link_to "show", admin_section_page_gallery_path(@page.section, @page,g.id) %> - <%= link_to "delete", admin_section_page_gallery_path(@page.section, @page,g.id), :confirm => 'Are you sure?', :method => :delete %></h2>
+<ul class="backend_list">
+	<% g.uploads.each do |u| %>
+		<li><%= image_tag u.photo_url(:thumb_small).to_s %>  <%= link_to "delete", admin_section_page_gallery_upload_path(@page.section, @page,g.id,u.id), :confirm => 'Are you sure?', :method => :delete %></li>
+	<% end%>
+</ul>
+<% end %>	
+	
 </div>
 
 <% content_for(:left_column) do %>
 
 <ul>
+	<li class="level1">
+	<%= link_to 'New gallery', new_admin_section_page_gallery_path(@section,@page)  %>
+	</li>
 	<li class="level1">
 	<%= link_to 'Edit', edit_admin_section_page_path(@section,@page)  %>
 	</li>
