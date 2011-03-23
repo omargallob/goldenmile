@@ -12,4 +12,5 @@ class Page
   references_many :subpages
   validates_presence_of :name, :title, :navlabel, :category, :body
   validates_uniqueness_of :name
+  index :category
 end

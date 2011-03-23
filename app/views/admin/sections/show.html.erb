@@ -1,18 +1,21 @@
 <% title "Section > #{@section.name} | Pages (#{@section.pages.count.to_s})" %>
-<div id="main" class="colored">
+<div id="main">
+	<table id="list">
+		<thead>
+	  <tr>		
+	    <th>Category</th>
+	    <th>Name</th>
+	    <th>Navlabel</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+		</thead>
+		<tbody>
+		<%= render :partial => @section.pages.delete_if{|x|x.name.blank?} %>
+		</tbody>
+	</table>
 
-<table id="list">
-  <tr>
-		
-    <th>Category</th>
-    <th>Name</th>
-    <th>Navlabel</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-	<%= render :partial => @section.pages.delete_if{|x|x.name.blank?} %>
-</table>
 </div>
 
 
@@ -28,4 +31,14 @@
 	<%= link_to  'Back', admin_sections_path  %>
 	</li>
 </ul>
+<% end %>
+<% content_for(:script) do %>
+<script>
+$(document).ready(function(){
+				oTable = $('#list').dataTable({
+					"bJQueryUI": true,
+					"sPaginationType": "full_numbers"
+				});
+});
+</script>
 <% end %>

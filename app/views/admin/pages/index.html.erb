@@ -1,8 +1,8 @@
 <% title "Listing pages" %>
 <div id="main" class="colored">
 <table id="list">
-  <tr>
-		
+	<thead>
+  <tr>		
     <th>Category</th>
     <th>Name</th>
     <th>Navlabel</th>
@@ -10,7 +10,10 @@
     <th></th>
     <th></th>
   </tr>
+	</thead>
+	<tbody>
 	<%= render :partial => @pages %>
+	</tbody>
 </table>
 </div>
 
@@ -26,3 +29,4 @@
 </ul>
 
 <% end %>
+
