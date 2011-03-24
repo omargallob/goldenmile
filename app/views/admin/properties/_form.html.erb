@@ -1,7 +1,7 @@
 <%= simple_form_for([:admin,@property]) do |f| %>
 <h1>Category</h1>
 	<%= f.fields_for :categories	do |builder|  %>
-		<%= builder.input :type, :collection => [["Rental Long term","Rental Long term"],["Rental Short term","Rental Short term"],["Sales","Sales"]] %>
+		<%= builder.input :name, :collection => [["Rental Long term","Rental Long term"],["Rental Short term","Rental Short term"],["Sales","Sales"]] %>
 		<%= builder.input :price %>
 		<%= builder.input :season %>
 	<% end %>
