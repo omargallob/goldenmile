@@ -59,7 +59,10 @@ textarea {
   margin: 0;
   vertical-align: middle;
 }
-
+div.actions{
+	float:left;
+	width:100%;
+}
 button,
 input[type="reset"],
 input[type="submit"],

@@ -4,8 +4,8 @@
 	<%= f.input :name %>
 	<%= f.input :navlabel %>
 	<%= f.input :title %>
-	<%= f.input :category %>
-	<%= f.input :body, :as => :text %>
+	<%= f.input :category, :as => :hidden, :input_html =>{:value=>"child"} %>
+	<%= f.input :body, :as => :text, :input_html =>{:class=>"mceEditor"} %>
 	<!--  :collection => @section.pages.map{|x| x.category}.delete_if{|x| x.blank?}.uniq -->
   <div class="actions">
     <%= f.submit %>

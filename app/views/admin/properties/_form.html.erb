@@ -1,0 +1,41 @@
+<%= simple_form_for([:admin,@property]) do |f| %>
+<h1>Category</h1>
+	<%= f.fields_for :categories	do |builder|  %>
+		<%= builder.input :type, :collection => [["Rental Long term","Rental Long term"],["Rental Short term","Rental Short term"],["Sales","Sales"]] %>
+		<%= builder.input :price %>
+		<%= builder.input :season %>
+	<% end %>
+	
+	<%# f.input :category, :collection => [["Rental Long term","Rental Long term"],["Rental Short term","Rental Short term"],["Sales","Sales"]], :as => :check_boxes %>
+<h1>Details</h1>
+ 	<%= f.input :subtype %>
+ 	<%= f.input :beds, :collection => 1..20 %>
+ 	<%= f.input :bath, :collection => 1..20 %>
+ 	<%= f.input :year, :as => :date, :start_year => Date.today.year - 100,
+                                :end_year => Date.today.year, :discard_day => true,:discard_month => true,
+                                :order => [:year] %>
+ <%= f.input :condition %>
+ <%= f.input :built %>
+ <%= f.input :constructed %>
+ <%= f.input :terrace %>
+ <%= f.input :garden %>
+ <%= f.input :furniture %>
+ <%= f.input :home_appliances %>
+ <%= f.input :other_rooms %>
+ <%= f.input :store_room %>
+ <%= f.input :security %>
+ <%= f.input :swimming_pool %>
+ <%= f.input :views %>
+ <%= f.input :orientation, :collection => [["North","North"],["East","East"],["South","South"],["West","West"]], :as => :check_boxes %>
+ <%= f.input :parking %>
+ <%= f.input :kitchen %>
+ <%= f.input :description,:as => :text,:input_html =>{:class=>"mceEditor"} %>
+
+ 
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

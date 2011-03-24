@@ -11,11 +11,15 @@ class Admin::SubpagesController <  Admin::PagesController
     @subpage = @page.subpages.create(params[:subpage])
    # @subpage.category = nil
     if @subpage.save
-      redirect_to admin_section_page_path(@page.section,@page)
+      redirect_to admin_section_page_path(@page.section,@page), :notice => 'Subpage was successfully created.'
     else
       render :action => :new, :notice => @subpage.errors
     end
   end 
+  def show
+     @page = Page.find(params[:page_id])
+     @subpage = @page.subpages.find(params[:id])
+  end
   def edit
      @page = Page.find(params[:page_id])
      @subpage = @page.subpages.find(params[:id])
@@ -24,7 +28,7 @@ class Admin::SubpagesController <  Admin::PagesController
      @page = Page.find(params[:page_id])
      @subpage = @page.subpages.find(params[:id])
         if @subpage.update_attributes(params[:subpage])
-          redirect_to admin_section_page_path(@page.section,@page)
+          redirect_to admin_section_page_path(@page.section,@page), :notice => 'Subpage <b>'.html_safe+@subpage.title+'</b> was successfully updated.'.html_safe
         else
           render :action => :edit
         end

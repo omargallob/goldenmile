@@ -1,0 +1,23 @@
+<% title "Section: #{@page.section.name} | #{@page.category} > #{@subpage.name}" %>
+
+<div id="main" class="colored">
+
+<h2>
+  
+  <%= @subpage.title %>
+</h2>
+<ul  class="backend_list">
+<li>
+
+  <%= @subpage.body.html_safe %>
+</li>
+</ul>
+</div>
+<% content_for(:left_column) do %>
+<ul>
+<li class="level1">
+<%= link_to "edit", edit_admin_page_subpage_path(@page, @subpage.id) %></li>
+<li class="level1"><%= link_to "delete",  admin_page_subpage_path(@page, @subpage.id), :confirm => 'Are you sure?', :method => :delete %></li>
+<li class="level1"><%= link_to "back",  :back %></li>
+</ul>
+<% end %>

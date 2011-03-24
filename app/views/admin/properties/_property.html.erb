@@ -1,0 +1,13 @@
+<tr>
+  <td><%= property.categories.map{|x| x.type } %></td>
+  <td><%= property.subtype %></td>
+  <td><%= property.bath %></td>
+  <td><%= property.beds %></td>
+  <td><%= property.year.strftime("%Y") %></td>
+  <td><%= property.built %> sqm</td>
+  <td><%= property.condition %></td>
+
+  <td><%= link_to 'Show', admin_property_path(property)  %></td>
+  <td><%= link_to 'Edit', edit_admin_property_path(property) %></td>
+  <td><%= link_to 'Destroy', admin_property_path(property), :confirm => 'Are you sure?', :method => :delete %></td>
+</tr>

@@ -1,0 +1,44 @@
+<% title "Listing properties" %>
+<div id="main" class="colored">
+<table id="list">
+	<thead>
+  <tr>
+    <th>Category</th>
+    <th>Subtype</th>
+    <th>Bath</th>
+    <th>Beds</th>
+    <th>Year</th>
+    <th>Built</th>
+    <th>Condition</th>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+	</thead>
+	<tbody>
+		<%= render :partial => @properties %>
+	</tbody>
+</table>
+</div>
+
+<% content_for(:left_column) do %>
+
+<ul>
+	<li class="level1">
+	<%= link_to 'New Property', new_admin_property_path  %>
+	</li>
+
+</ul>
+
+<% end %>
+<% content_for(:script) do %>
+<script>
+$(document).ready(function(){
+				oTable = $('#list').dataTable({
+					"bJQueryUI": true,
+					"sPaginationType": "full_numbers"
+				});
+});
+</script>
+<% end %>

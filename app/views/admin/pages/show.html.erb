@@ -7,10 +7,12 @@
   <%= @page.title %>
 </h2>
 
-<p>
+<ul class="backend_list">
+<li>
 
-  <%= @page.body %>
-</p>
+  <%= @page.body.html_safe %>
+</li>
+</ul>
 
 <h2>Total Subpages <%= @page.subpages.count %></h2>
 <ul class="backend_list">

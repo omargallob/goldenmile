@@ -10,11 +10,12 @@ Goldenmile::Application.routes.draw do
   #get "properties/index"
   match "properties/search" => "properties#search"
 
-  resources :properties
+
   devise_for :admins
 
+  resources :properties
  namespace "admin" do 
-   
+   resources :properties
    resources :galleries do 
      resources :uploads
     end

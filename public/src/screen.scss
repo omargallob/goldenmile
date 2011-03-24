@@ -668,19 +668,23 @@ body{
 						10px;
 					border-bottom:
 						1px solid white;
+					.mceEditor{
+						float:
+							left;
+					}
+					h1{
+						float:
+							left;
+						width:
+							400px;
+					}
 					textarea{
 						width:
-							207px;
-						border:
-							1px solid white;
-						background:
-							transparent;
-						font-family:
-							Verdana;
-						font-size:
-							10px;
-						padding:
-							4px;
+							240px;
+					}
+					label.collection_check_boxes{
+						width:
+							55px;
 					}
 					label.title{
 						width:
@@ -843,7 +847,7 @@ body{
 					tr{
 						th{
 							background:
-								black;
+								#00340B;
 							color:
 								white;
 							font-weight:
